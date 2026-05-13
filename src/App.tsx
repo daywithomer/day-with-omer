@@ -22,9 +22,9 @@ import { supabase } from './lib/supabase';
 
 export default function App() {
   const [username, setUsername] = useState('');
-  const [isCopied, setIsCopied] = useState(true);
-  const [isSubmitted, setIsSubmitted] = useState(true);
-  const [isSubmitting, setIsSubmitting] = useState(true);
+  const [isCopied, setIsCopied] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const paymentSectionRef = useRef<HTMLDivElement>(null);
 
